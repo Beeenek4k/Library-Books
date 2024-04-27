@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="books.xsl"?>
+<books>
+    <book>
+        <title>John Adams</title>
+        <author>David McCullough</author>
+        <genre>History, Biography, Nonfiction, American History, Presidents, Politics, Historical, Biography Memoir, American Revolution</genre>
+    </book>
+
+    <book>
+        <title>The Rise and Fall of the Third Reich: A History of Nazi Germany</title>
+        <author>William L. Shirer</author>
+        <genre>History, Nonfiction, War, World War II, Politics, Germany, Historical</genre>
+    </book>
+
+    <book>
+        <title>1776</title>
+        <author>David McCullough</author>
+        <genre>History, Nonfiction, American History, Historical, American Revolutionary War</genre>
+    </book>
+
+    <book>
+        <title>The Guns of August</title>
+        <author>Barbara W. Tuchman</author>
+        <genre>History, Nonfiction, War, World War I, Military History, Politics</genre>
+    </book>
+
+    <book>
+        <title>Team of Rivals: The Political Genius of Abraham Lincoln</title>
+        <author>Doris Kearns Goodwin</author>
+        <genre>History, Nonfiction, Biography, Politics, American History, Civil War, Presidents</genre>
+    </book>
+
+    <book>
+        <title>Guns, Germs, and Steel: The Fates of Human Societies</title>
+        <author>Jared Diamond</author>
+        <genre>History, Nonfiction, Science, Anthropology, Sociology, Politics, Economics</genre>
+    </book>
+
+    <book>
+        <title>The Diary of a Young Girl</title>
+        <author>Anne Frank</author>
+        <genre>Classic, Nonfiction, Biography, Memoir, Historical, Holocaust, Autobiography</genre>
+    </book>
+
+    <book>
+        <title>Unbroken: A World War II Story of Survival, Resilience, and Redemption</title>
+        <author>Laura Hillenbrand</author>
+        <genre>Nonfiction, History, Biography, World War II, War, Historical</genre>
+    </book>
+
+    <book>
+        <title>Bury My Heart at Wounded Knee: An Indian History of the American West</title>
+        <author>Dee Brown</author>
+        <genre>History, Nonfiction, American History, Classics, Historical, Politics, Race</genre>
+    </book>
+
+    <book>
+        <title>The Devil in the White City</title>
+        <author>Erik Larson</author>
+        <genre>Nonfiction, History, True Crime, Crime, Historical, Mystery</genre>
+    </book>
+
+    <book>
+        <title>A People's History of the United States</title>
+        <author>Howard Zinn</author>
+        <genre>History, Nonfiction, Politics, American History, Social Justice, Classics</genre>
+    </book>
+
+    <book>
+        <title>A Distant Mirror: The Calamitous 14th Century</title>
+        <author>Barbara W. Tuchman</author>
+        <genre>History, Nonfiction, Medieval, European History, Medieval History, Historical</genre>
+    </book>
+
+    <book>
+        <title>A Short History of Nearly Everything</title>
+        <author>Bill Bryson</author>
+        <genre>Nonfiction, Science, History, Humor, Physics, Popular Science</genre>
+    </book>
+
+    <book>
+        <title>Battle Cry of Freedom</title>
+        <author>James M. McPherson</author>
+        <genre>History, Nonfiction, Civil War, American History, War, American Civil War, Military History</genre>
+    </book>
+
+    <book>
+        <title>Night (The Night Trilogy #1)</title>
+        <author>Elie Wiesel</author>
+        <genre>Nonfiction, Classics, Memoir, Holocaust, Biography, School, Historical</genre>
+    </book>
+
+    <book>
+        <title>The Histories</title>
+        <author>Herodotus</author>
+        <genre>History, Nonfiction, Ancient History, Greece, Ancient, Classics, Philosophy</genre>
+    </book>
+
+    <book>
+        <title>Undaunted Courage: The Pioneering First Mission to Explore America's Wild Frontier</title>
+        <author>Stephen E. Ambrose</author>
+        <genre>History, Nonfiction, Biography, American History, Adventure, Historical, Travel</genre>
+    </book>
+
+    <book>
+        <title>The Decline and Fall of the Roman Empire</title>
+        <author>Edward Gibbon</author>
+        <genre>History, Nonfiction, Classics, Ancient History, Historical, Politics, World History</genre>
+    </book>
+
+    <book>
+        <title>Truman</title>
+        <author>David McCullough</author>
+        <genre>History, Nonfiction, Presidents, Biography, American History, Politics, Biography Memoir</genre>
+    </book>
+
+    <book>
+        <title>The Rape of Nanking: The Forgotten Holocaust of World War II</title>
+        <author>Iris Chang</author>
+        <genre>History, Nonfiction, China, War, Japan, World War II, Historical</genre>
+    </book>
+
+    <book>
+        <title>1491: New Revelations of the Americas Before Columbus</title>
+        <author>Charles C. Mann</author>
+        <genre>History, Nonfiction, American History, Anthropology, Science, Historical, World History</genre>
+    </book>
+
+    <book>
+        <title>Hiroshima</title>
+        <author>John Hersey</author>
+        <genre>History, Nonfiction, War, Classics, Japan, World War II, Historical</genre>
+    </book>
+
+    <book>
+        <title>Stalingrad: The Fateful Siege, 1942-1943</title>
+        <author>Antony Beevor</author>
+        <genre>History, Nonfiction, War, World War II, Russia, Military History, Military Fiction</genre>
+    </book>
+
+    <book>
+        <title>History of the Peloponnesian War</title>
+        <author>Thucydides</author>
+        <genre>History, Classics, Nonfiction, War, Ancient History, Politics, Greece</genre>
+    </book>
+
+    <book>
+        <title>The Trigger: Hunting the Assassin Who Brought the World to War</title>
+        <author>Tim Butcher</author>
+        <genre>History, Nonfiction, World War I, War, Biography, Travel, Historical</genre>
+    </book>
+    
+</books>
