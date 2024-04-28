@@ -1,33 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-    <xsl:output method="html" doctype-public="XSLT-compat" omit-xml-declaration="yes" encoding="UTF-8" indent="yes"/>
-    
+    <xsl:output method="html" encoding="UTF-8" indent="yes"/>
+
+    <xsl:param name="searchID" select="''"/>
+
     <xsl:template match="/books">
         <html>
             <head>
-                <title>Library Books</title>
-                <link rel="stylesheet" type="text/css" href="style.css"/>
+                <title>Book Search</title>
+                <link rel="stylesheet" type="text/css" href="design.css"/>
             </head>
             <body>
-                <h1>Library Books</h1>
-                <form method="post">
-                    <label for="searchID">Search Books:</label>
-                    <input type="text" id="searchID" name="searchID" placeholder="Search by title, author, or genre" />
-                    <input type="submit" value="Search" />
+                <h1>PILAPIL, MIGUEL V. | 3 BSIT-2 | LIBRARY BOOKS</h1>
+                <form method="get" action="">
+                    <label for="searchID">ENTER BOOK TITLE OR GENRE:</label>
+                    <input type="text" id="searchID" name="searchID" value="{searchID}"/>
+                    <input type="submit" value="Search"/>
                 </form>
 
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Title</th>
-                            <th>Author</th>
-                            <th>Genre</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <xsl:apply-templates select="book[contains(translate(concat(title, author, genre), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), translate($searchID, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'))]"/>
-                    </tbody>
+                <table border="1">
+                    <tr>
+                        <th>BOOK NAME</th>
+                        <th>AUTHOR</th>
+                        <th>GENRE</th>
+                    </tr>
+                    <xsl:apply-templates select="book[contains(lower-case(title), lower-case($searchID)) or contains(lower-case(genre), lower-case($searchID))]"/>
                 </table>
             </body>
         </html>
