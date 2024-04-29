@@ -3,30 +3,43 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
+    background-color: #f9f9f9; /* Light background color for the body */
+    color: #333; /* Dark text color for contrast */
 }
 
 /* Header styles */
 h1 {
     text-align: center;
     margin-bottom: 20px;
+    font-size: 24px; /* Larger font size for the header */
+    color: #2f2e9e; /* Dark blue color */
 }
 
 /* Form styles */
 form {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px; /* Rounded corners */
+    background-color: #e2e2f2; /* Light gray background color */
 }
 
+/* Input styles */
 input[type="text"] {
-    padding: 5px;
+    padding: 10px; /* Increase padding */
     font-size: 16px;
     margin-right: 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+    transition: border-color 0.3s ease;
 }
 
-input[type="submit"] {
-    padding: 5px 10px;
-    font-size: 16px;
+input[type="text"]:focus {
+    border-color: #2f2e9e; /* Dark blue border color on focus */
+    outline: none;
 }
 
 /* Table styles */
@@ -34,14 +47,46 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px; /* Lighter box shadow */
+    background-color: #fff; /* White background */
 }
 
 th, td {
     padding: 10px;
     text-align: left;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: #e2e2f2; /* Light gray background color for headers */
+    font-weight: bold;
+}
+
+button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+button:active {
+    transform: translateY(-1px);
 }

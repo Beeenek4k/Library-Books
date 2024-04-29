@@ -1,31 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-    <xsl:output method="html" encoding="UTF-8" indent="yes"/>
+    <xsl:output method="html" doctype-public="XSLT-compat" omit-xml-declaration="yes" encoding="UTF-8" indent="yes"/>
 
-    <xsl:param name="searchID" select="''"/>
+    <xsl:param name="searchID"/>
 
     <xsl:template match="/books">
         <html>
             <head>
-                <title>Book Search</title>
-                <link rel="stylesheet" type="text/css" href="design.css"/>
+                <title>LIBRARY BOOKS</title>
+                <link rel="stylesheet" type="text/css" href="style.css"/>
             </head>
             <body>
                 <h1>PILAPIL, MIGUEL V. | 3 BSIT-2 | LIBRARY BOOKS</h1>
-                <form method="get" action="">
-                    <label for="searchID">ENTER BOOK TITLE OR GENRE:</label>
-                    <input type="text" id="searchID" name="searchID" value="{searchID}"/>
-                    <input type="submit" value="Search"/>
+                <form method="post">
+                    <label for="searchID">ENTER BOOK TITLE OR GENRE: </label>
+                    <input type="text" id="searchID" name="searchID"/>
+                    <!-- Changed input type to button element -->
+                    <button id="Btn">Search</button>
                 </form>
 
                 <table border="1">
                     <tr>
-                        <th>BOOK NAME</th>
-                        <th>AUTHOR</th>
-                        <th>GENRE</th>
+                        <th>BOOK NAME:</th>
+                        <th>AUTHOR:</th>
+                        <th>GENRE:</th>
                     </tr>
-                    <xsl:apply-templates select="book[contains(lower-case(title), lower-case($searchID)) or contains(lower-case(genre), lower-case($searchID))]"/>
+                    <xsl:apply-templates select="book[contains(translate(name, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), translate($searchID, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'))]"/>
                 </table>
             </body>
         </html>
