@@ -18,9 +18,10 @@
 
                             for (var i = 1; i < rows.length; i++) {
                                 var title = rows[i].getElementsByTagName('td')[0].textContent.toLowerCase();
+                                var author = rows[i].getElementsByTagName('td')[1].textContent.toLowerCase();
                                 var genre = rows[i].getElementsByTagName('td')[2].textContent.toLowerCase();
 
-                                if (title.includes(searchID) || genre.includes(searchID)) {
+                                if (title.includes(searchID) || author.includes(searchID) || genre.includes(searchID)) {
                                     rows[i].style.display = '';
                                 } else {
                                     rows[i].style.display = 'none';
@@ -33,7 +34,7 @@
             <body>
                 <h1>PILAPIL, MIGUEL V. | 3 BSIT-2 | LIBRARY BOOKS</h1>
                 <form>
-                    <label for="searchID">ENTER BOOK TITLE OR GENRE: </label>
+                    <label for="searchID">ENTER BOOK TITLE, AUTHOR, OR GENRE: </label>
                     <input type="text" id="searchID" name="searchID"/>
                     <button type="button" id="Btn" onclick="searchBooks()">SEARCH</button>
                 </form>
